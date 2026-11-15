@@ -1,0 +1,51 @@
+/* Privacy page. Shared typography and colours come from style.css. */
+.privacy-page .policy-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:72px;align-items:center;padding:64px 0 48px}
+.policy-hero .eyebrow{margin-bottom:24px}
+.privacy-page .policy-hero h1{font-size:clamp(56px,6.3vw,84px);line-height:.98;letter-spacing:-4px;margin:0 0 24px}
+.policy-subtitle{font-size:18px;line-height:1.6;margin:0;color:var(--muted)}
+.policy-date{font-size:12px;color:var(--muted);margin:25px 0 0;display:flex;gap:16px;flex-wrap:wrap}
+.policy-date time{font-weight:700;color:var(--ink)}
+.policy-stamp{background:var(--ink);color:var(--white);border-radius:var(--radius);padding:28px 30px;transform:rotate(1.5deg)}
+.policy-stamp .card-kicker{font-size:10px;letter-spacing:1.5px;padding-bottom:20px}
+.stamp-title{font-size:clamp(38px,4.1vw,53px);font-weight:900;letter-spacing:-2px;line-height:1.02;margin:28px 0 30px}
+.stamp-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid #44443f;padding-top:20px;font:10px Consolas,monospace;letter-spacing:1px;color:#c7c7c0}
+.stamp-bottom span:last-child{font-size:23px;color:#fff}
+.privacy-page .language-nav{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:none;padding:14px 0;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);scroll-margin-top:12px}
+.language-caption{font:11px Consolas,monospace;letter-spacing:1.5px;color:var(--muted);font-weight:700}
+.language-options{display:flex;gap:10px;flex-wrap:wrap}
+.language-options a{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px 15px;border:1px solid var(--line);border-radius:8px;background:var(--white);font-size:14px;font-weight:700;text-decoration:none}
+.language-options a:hover{background:var(--ink);border-color:var(--ink);color:var(--white);text-decoration:none}
+.language-code{font:10px Consolas,monospace;letter-spacing:.7px;color:inherit;opacity:.65}
+.policy-layout{display:grid;grid-template-columns:238px minmax(0,1fr);gap:48px;padding:36px 0 70px;align-items:start}
+.policy-sidebar{position:sticky;top:110px;padding-top:14px}
+.policy-sidebar>.eyebrow{margin-bottom:26px}
+.policy-details{margin:0}
+.policy-details div{margin-bottom:24px}
+.policy-details dt{font-size:11px;color:var(--muted);margin-bottom:5px}
+.policy-details dd{margin:0;font-size:14px;font-weight:700;line-height:1.5}
+.policy-details .package-name{font:11px/1.6 Consolas,monospace;overflow-wrap:anywhere}
+.policy-contact{border-top:1px solid var(--line);padding-top:26px;margin-top:30px}
+.policy-contact .eyebrow{margin-bottom:12px;font-size:10px;letter-spacing:1px}
+.policy-contact a{font-size:13px;font-weight:700;overflow-wrap:anywhere}
+.policy-contact p:not(.eyebrow){font-size:10px;color:var(--muted);margin:10px 0 0}
+.policy-contact p+p:not(.eyebrow){margin-top:3px}
+.studio-link{display:inline-block;margin-top:30px;font-size:12px;text-decoration:none}
+.studio-link span{margin-right:7px}
+.studio-link:hover{text-decoration:underline}
+.policy-sections{min-width:0;display:grid;gap:28px}
+.policy-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:36px 38px;scroll-margin-top:96px}
+.policy-section-header{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+.policy-section-header .eyebrow{margin:0 0 16px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+.policy-section-header h2{font-size:30px;line-height:1.18;letter-spacing:-.8px;margin:0;overflow-wrap:anywhere}
+.policy-copy p{font-size:15px;line-height:1.85;color:#42423e;margin:0 0 24px;overflow-wrap:anywhere}
+.policy-copy .policy-intro{font-size:15px;color:var(--ink)}
+.topic-label{color:var(--ink);font-weight:700}
+.policy-copy a{color:var(--ink);text-decoration-thickness:1px;overflow-wrap:anywhere}
+.policy-copy a:hover{text-decoration-thickness:2px}
+.back-top{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:20px;margin-top:4px;font-size:12px;font-weight:700;text-decoration:none;min-height:44px}
+.back-top:hover{text-decoration:underline}
+.privacy-page .skip:focus{z-index:10}
+@media(max-width:950px){.privacy-page .policy-hero{gap:40px}.policy-layout{grid-template-columns:200px minmax(0,1fr);gap:28px}.policy-card{padding:30px}.policy-stamp{padding:26px}.policy-copy p{font-size:15px}}
+@media(max-width:760px){.privacy-page .policy-hero{grid-template-columns:1fr;gap:0;padding:40px 0 30px}.privacy-page .policy-hero h1{font-size:62px;letter-spacing:-3px}.policy-stamp{display:none}.policy-subtitle{font-size:16px}.policy-date{margin-top:20px;gap:10px}.privacy-page .language-nav{gap:10px;padding:12px 0}.language-caption{display:none}.language-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:8px}.language-options a{justify-content:center;font-size:12px;padding:9px 6px;gap:0;min-height:44px}.language-code{display:none}.policy-layout{display:flex;flex-direction:column;gap:24px;padding-top:24px;padding-bottom:40px}.policy-sections{order:1;width:100%;gap:22px}.policy-sidebar{order:2;position:static;width:100%;padding:24px 0 0;border-top:1px solid var(--line)}.policy-sidebar>.eyebrow{margin-bottom:20px}.policy-details{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.policy-details div{margin-bottom:20px;min-width:0}.policy-contact{margin-top:6px;padding-top:20px}.policy-contact a{font-size:14px}.policy-card{padding:25px 22px;scroll-margin-top:88px}.policy-section-header h2{font-size:27px;letter-spacing:-.6px}.policy-copy p{font-size:15px;line-height:1.8}.privacy-page footer div{gap:18px;flex-wrap:wrap}}
+@media(max-width:370px){.privacy-page .wrap{padding:0 18px}.privacy-page .header nav{gap:10px;font-size:11px;max-width:155px}.privacy-page .wordmark{font-size:18px}.privacy-page .wordmark span{letter-spacing:3.7px}.policy-card{padding:22px 18px}.policy-section-header h2{font-size:24px}}
+@media print{.privacy-page{background:#fff;color:#000}.privacy-page .wrap{max-width:none;padding:0}.privacy-page .header,.policy-stamp,.language-nav,.policy-sidebar,.back-top,.privacy-page footer,.skip{display:none!important}.privacy-page .policy-hero{display:block;padding:0 0 20px}.privacy-page .policy-hero h1{font-size:38px;letter-spacing:-1px}.policy-layout{display:block;padding:0}.policy-sections{display:block}.policy-card{border:0;border-radius:0;padding:20px 0;break-before:page}.policy-card:first-child{break-before:auto}.policy-section-header{break-after:avoid}.policy-copy p{font-size:11pt;line-height:1.55;orphans:3;widows:3}.policy-copy a{color:#000}}
