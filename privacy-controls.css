@@ -1,0 +1,10 @@
+/* Language selector and single-translation layout. */
+.policy-card[hidden]{display:none!important}
+.policy-hero h1,.policy-subtitle{white-space:pre-line}
+.privacy-page .language-caption{display:block;white-space:nowrap}
+.language-field{width:210px;max-width:65%}
+#policy-language{display:block;width:100%;min-height:48px;padding:10px 16px;border:1px solid var(--ink);border-radius:10px;background:var(--white);color:var(--ink);font:700 15px/1.5 Arial,Helvetica,sans-serif;cursor:pointer}
+html[lang="ru"] .policy-hero h1{font-size:clamp(30px,3.4vw,48px);line-height:1.1;letter-spacing:-1.8px;overflow-wrap:anywhere}
+@media(max-width:760px){.privacy-page .language-nav{flex-direction:row;justify-content:space-between}.privacy-page .language-caption{display:block;font-size:11px;letter-spacing:1px}.language-field{width:190px}html[lang="ru"] .policy-hero h1{font-size:clamp(29px,7.6vw,45px);letter-spacing:-1.1px}}
+html[lang="nl"] .policy-hero h1{font-size:clamp(40px,5vw,68px);letter-spacing:-2px}
+@media(max-width:760px){html[lang="nl"] .policy-hero h1{font-size:clamp(34px,10vw,54px);letter-spacing:-1.4px}}
